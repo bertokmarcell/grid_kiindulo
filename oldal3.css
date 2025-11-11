@@ -1,0 +1,45 @@
+nav{
+    display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(5, 31, 32);
+  max-width: 600px; /* Adjust for how wide you want it */
+  margin: 0 auto; /* Centers the nav itself */
+  padding: 10px;
+  border-radius: 8px;
+  gap: 60px;
+}
+article{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    justify-items: center;
+    gap: 10px;
+}
+.nova{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 6px;
+}
+.cikk {
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  background-color: white;
+  padding: 10px;
+  height: 100%; 
+  box-sizing: border-box;
+  text-align: center;
+  border: 2px slategrey solid;
+}
+footer{
+    text-align: center;
+}
+article .cikk:nth-child(3) {
+  order: -1;
+}

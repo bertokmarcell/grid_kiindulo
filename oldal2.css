@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "article aside"
+        "footer footer";
+    grid-template-columns: 1fr 200px; 
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+    gap: 20px;
+    gap: 0px;
+}
+
+
+header {
+    grid-area: header;
+    background-color: #63f94f;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #6dbe6d;
+    padding: 20px;
+}
+
+article {
+    grid-area: article;
+    background-color: #41c5f9;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+aside {
+    grid-area: aside;
+    background-color: #41c5f9;
+    padding: 20px;
+    
+}
+footer {
+    grid-area: footer;
+    background-color: #578090;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+li{
+    list-style-type: none;
+}
+.nova{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.cikk {
+  display: grid;
+  align-content: center; 
+  justify-items: center; 
+  grid-template-rows: auto auto auto; 
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid slategrey;
+  height: 100%;
+  text-align: center;
+}
+nav {
+    display: grid;
+    grid-auto-flow: column; /* place child ul elements in a row */
+    justify-content: center; /* center the menu horizontally */
+    align-items: center; /* vertical alignment */
+    gap: 20px; /* space between menu items */
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none; /* remove bullets */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none; /* remove underline */
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li#active a {
+    background-color: #c94ff9; 
+    color: #333;
+    border-radius: 5px;
+}

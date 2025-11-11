@@ -1,0 +1,61 @@
+nav{
+    display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(5, 31, 32);
+  max-width: 600px; /* Adjust for how wide you want it */
+  margin: 0 auto; /* Centers the nav itself */
+  padding: 10px;
+  border-radius: 8px;
+  gap: 60px;
+}
+article{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 200px) );
+    gap: 20px;
+    justify-content: center;
+}
+.nova{
+    background-color: rgb(5, 31, 32);
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 6px;
+}
+.cikk {
+  display: grid;
+  align-content: center; 
+  justify-items: center; 
+  grid-template-rows: auto auto auto; 
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid slategrey;
+  height: 100%;
+  text-align: center;
+}
+footer{
+    text-align: center;
+}
+article .cikk:nth-child(3) {
+  order: -1; /* Box 3 moves first */
+}
+
+article .cikk:nth-child(2) {
+  order: 0; /* Box 1 stays after Box 3 */
+}
+
+article .cikk:nth-child(1) {
+  order: 1; /* Box 2 next */
+}
+
+article .cikk:nth-child(4) {
+  order: 2; /* Box 4 last */
+}
+article .cikk:nth-child(5) {
+  order: 3; /* Box 4 last */
+}
